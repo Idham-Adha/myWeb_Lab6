@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaysia Quiz</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+    integrity="sha512-KfkfwT00GllwQdVnpPdhKqzefT/b2Af0zTV6SMA1wO8s1+PKcsWVxP6POU6z3z7QW7V/Jm6pShHiHPiP6yEFSw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg" alt="Malaysia Flag" id="flag">
+            <h1>Malaysia Quiz Challenge</h1>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="intro">
+        <h2>Welcome to the Malaysia Quiz!</h2>
+        <p>
+            Test your knowledge of Malaysia's history, culture, and landmarks! 
+            You have <strong>20 seconds</strong> to answer each question. Are you ready to take the challenge?
+        </p>
+        <button id="start-btn"><i class="fa-solid fa-play"></i> Start Quiz</button>
+    </section>
+
+    <!-- Quiz Container -->
+    <main>
+        <div id="quiz-container" class="card hidden">
+            <h2 id="question"></h2>
+            <div id="options"></div>
+            <p id="timer">
+                <i class="fa-solid fa-clock"></i> Time Left: <span id="time">20</span> seconds
+            </p>
+            <button id="skip-btn"><i class="fa-solid fa-forward"></i> Skip Question</button>
+        </div>
+
+        <!-- Results Section -->
+        <div id="result-container" class="card hidden">
+            <h2><i class="fa-solid fa-trophy"></i> Your Final Score: <span id="score"></span></h2>
+            <p>Well done! Test yourself again to improve your knowledge.</p>
+            <button onclick="startQuiz()"><i class="fa-solid fa-redo"></i> Restart Quiz</button>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Made with love and Knowledge.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
